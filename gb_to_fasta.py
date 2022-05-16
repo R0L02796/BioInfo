@@ -1,11 +1,13 @@
+import sys
 from Bio import SeqIO
 
-gb_path = "./sequence.gb"
-fasta_path = "./sequence.fasta"
+gb_path = sys.argv[1]
+fasta_path = sys.argv[2]
 
 FASTA_LINE_LENGTH = 70
-GENBANK = "gb" 
+GENBANK = "gb"
 
+# missing file validation
 
 for gb_content in SeqIO.parse(gb_path, GENBANK):
     # extracting header
