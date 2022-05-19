@@ -1,0 +1,79 @@
+LOCUS       contig00191             535 bp    DNA     linear       05-DEC-2016
+DEFINITION  Genus species strain strain.
+ACCESSION   
+VERSION
+KEYWORDS    .
+SOURCE      Genus species
+  ORGANISM  Genus species
+            Unclassified.
+COMMENT     Annotated using prokka 1.11 from http://www.vicbioinformatics.com.
+FEATURES             Location/Qualifiers
+     source          1..535
+                     /organism="Genus species"
+                     /mol_type="genomic DNA"
+                     /strain="strain"
+     CDS             36..302
+                     /locus_tag="Prok_05208"
+                     /inference="ab initio prediction:Prodigal:2.60"
+                     /inference="protein motif:Pfam:PF06890.6"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Bacteriophage Mu Gp45 protein"
+                     /translation="MAVYDDQGQSVTLTREGIVVDGAGKTITFRNAPRARFEMDLEVT
+                     GQVKDLCDSGGTTMSAMRLAYNGHRHRENGQGSNTDKPDKAMEA"
+     CDS             302..475
+                     /locus_tag="Prok_05209"
+                     /inference="ab initio prediction:Prodigal:2.60"
+                     /inference="protein motif:Pfam:PF07409.6"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Phage protein GP46"
+                     /translation="MELWLTVNGKRTCASAPLDPLTRAVVISLFTWRRAEPDDNADVP
+                     MGWWGGYLACGTE"
+ORIGIN      
+        1 gtcgctaccg cctgaaaggg ctgcaaacgg gggaggtggc tgtctatgac gatcaggggc
+       61 agtccgtgac gctgacccgg gaggggatcg tggtggacgg tgcaggtaaa acgatcacgt
+      121 ttcgcaatgc gcccagagca cgttttgaaa tggacctgga agtgaccgga caggtgaaag
+      181 acctgtgcga ctccggcggc accaccatgt cagcgatgcg gcttgcctat aacgggcatc
+      241 gtcacagaga gaacggtcag ggcagtaaca ccgacaaacc tgataaagcg atggaggcat
+      301 gatggaactg tggctgacgg tgaacggtaa acgcacctgc gccagcgcac cgctggatcc
+      361 gctgacccgc gccgtggtga tttccctgtt cacctggcgg cgggcggagc ctgatgacaa
+      421 tgccgacgtc ccgatgggat ggtggggggg atacctggcc tgcggtacag aatgaccgtt
+      481 acggctcccg gctgtggctg cttcagcgca gcaaactgac caatcagctg gtgct
+//
+LOCUS       contig00192              529 bp    DNA     linear       05-DEC-2016
+DEFINITION  Genus species strain strain.
+ACCESSION   
+VERSION
+KEYWORDS    .
+SOURCE      Genus species
+  ORGANISM  Genus species
+            Unclassified.
+COMMENT     Annotated using prokka 1.11 from http://www.vicbioinformatics.com.
+FEATURES             Location/Qualifiers
+     source          1..529
+                     /organism="Genus species"
+                     /mol_type="genomic DNA"
+                     /strain="strain"
+     CDS             84..356
+                     /gene="rhsC_4"
+                     /locus_tag="Prok_05210"
+                     /EC_number="3.1.-.-"
+                     /inference="ab initio prediction:Prodigal:2.60"
+                     /inference="similar to AA sequence:UniProtKB:E0SGL7"
+                     /codon_start=1
+                     /transl_table=11
+                     /product="Putative deoxyribonuclease RhsC"
+                     /translation="MYQPYRLPGQQHDEESGLYYNRHRYYDPLQGRYITQDPMGLKGG
+                     WNLYQYPLNPLQQIDPMGLLQTWDDARSGACTGGSLWCSFTYNRTK"
+ORIGIN      
+        1 ttatcagcga agacggcaat acggcgtgga gcgcggaata tgatgaatgg ggcaaccagc
+       61 ttaatgagga gaacccgcat catgtgtatc agccgtaccg tctgccaggg cagcagcatg
+      121 atgaggaatc agggctgtac tataaccgtc accggtacta cgatccgttg caggggcggt
+      181 atattactca ggacccgatg gggttgaaag ggggatggaa tttatatcag tatcctttaa
+      241 atccactaca acaaattgac cctatgggat tattgcagac ttgggatgat gccagatctg
+      301 gagcatgtac gggggggagt ttgtggtgtt ctttcacgta taataggacc aagtaaattt
+      361 gatagtactg cagatgctgc gttagatgct ttgaaagaaa cgcagaatag atctctatgt
+      421 aatgatatgg aatactctgg tattgtctgt aaagatacta atggaaaata ttttgcatct
+      481 aaggcagaaa ctgataattt aagaaaggag tcatatcctc tgaaaagaa
+// 

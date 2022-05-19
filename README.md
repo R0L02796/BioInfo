@@ -45,7 +45,9 @@ Para instalar las dependencias necesarias en el ambiente virtual.
 
 #### Ejercicio 1
 
-`python3 gb_to_fasta.py [-h] -i I [-o O]`
+Para correr el programa
+
+`pipenv run gb_to_fasta.py [-h] -i I [-o O]`
 
 **Argumentos:**
 
@@ -60,5 +62,7 @@ El programa toma el archivo en formato GeneBank y analiza las secuencias de
 nucleótidos en sus registros. Luego, para cada una de ellas escribe un
 archivo en formato FASTA como `<id>.fasta`.
 
+También se encuentra un archivo `data/genebank/multi_record.gb` con 2 registros
+para probar que el programa funciona con varios registros.
 
 
