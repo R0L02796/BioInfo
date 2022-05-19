@@ -47,7 +47,7 @@ Para instalar las dependencias necesarias en el ambiente virtual.
 
 Para correr el programa
 
-`pipenv run gb_to_fasta.py [-h] -i I [-o O]`
+`pipenv run python gb_to_fasta.py [-h] -i I [-o O]`
 
 **Argumentos:**
 
@@ -70,7 +70,7 @@ para probar que el programa funciona con varios registros.
 
 Para correr el programa
 
-`pipenv run blast.py [-h] -i I [-o O] -m {nucleotide,protein}`
+`pipenv run python blast.py [-h] -i I [-o O] -m {nucleotide,protein}`
 
 
 **Argumentos:**
