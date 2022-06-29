@@ -1,7 +1,8 @@
+#!/usr/bin/env python3
 import argparse
 import os
 from Bio import SeqIO
-from Bio.Blast.NCBIWWW import qblast
+from lib.NCBIWWW import qblast
 
 DEFAULT_BLAST_DIR = './out/blast/'
 FASTA_LINE_LENGTH = 70
