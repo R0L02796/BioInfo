@@ -3,7 +3,7 @@ import shutil
 import os
 import argparse
 
-parser = argparse.ArgumentParser(description='Runs BLAST of FASTA sequences')
+parser = argparse.ArgumentParser(description='')
 parser.add_argument('-i', '--in-file', help='Input FASTA file', metavar="I", type=str, required=True)
 parser.add_argument('-o', '--out-file', help='Output file', metavar="O",  type=str, required=False, default="ej5.patmatmotifs")
 args = parser.parse_args()

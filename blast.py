@@ -2,7 +2,7 @@
 import argparse
 import os
 from Bio import SeqIO
-from lib.NCBIWWW import qblast
+from Bio.Blast.NCBIWWW import qblast
 
 DEFAULT_BLAST_DIR = './out/blast/'
 FASTA_LINE_LENGTH = 70
@@ -11,7 +11,7 @@ FASTA = "fasta"
 parser = argparse.ArgumentParser(description='Runs BLAST of FASTA sequences')
 parser.add_argument('-i', '--in-dir', help='Directory with FASTA sequencies', metavar="I", type=str, required=True)
 parser.add_argument('-o', '--out-dir', help='Directory for BLAST reports', metavar="O",  type=str, required=False, default=DEFAULT_BLAST_DIR)
-parser.add_argument('-m', '--mode', help='Choose between nucleotide or protein BLAST', choices=('nucleotide', 'protein'), type=str, required=True)
+parser.add_argument('-m', '--mode', help='Choose between nucleotide or protein BLAST', choices=('nucleotide', 'protein', 'nucleotide-xml', 'protein-xml'), type=str, required=True)
 args = parser.parse_args()
 
 fasta_dir = args.in_dir
@@ -47,6 +47,8 @@ def run_blast(file):
     BLAST_MODE = {
         'nucleotide': lambda : qblast("blastn", "nt", record.format("fasta"), expect=0.05, format_type="Text"),
         'protein': lambda : qblast("blastn", "nr", record.format("fasta"), expect=0.05, format_type="Text"),
+        'nucleotide-xml': lambda : qblast("blastn", "nt", record.format("fasta"), expect=0.05),
+        'protein-xml': lambda : qblast("blastn", "nr", record.format("fasta"), expect=0.05),
     }
 
     for record in SeqIO.parse(file, FASTA):
@@ -65,22 +67,3 @@ for file in os.listdir(fasta_dir):
     else:
         continue
 
-# for gb_content in SeqIO.parse(gb_path, GENBANK):
-#     # extracting header
-#     header = ">{id} {description}\n".format(id=gb_content.id, description=gb_content.description)
-#     # extracting sequence
-#     sequence = str(gb_content.seq)
-#     # making a list of strings with fasta fixed line length
-#     sequence_lines = [sequence[i:i+FASTA_LINE_LENGTH] for i in range(0, len(sequence), FASTA_LINE_LENGTH)]
-
-#     try:
-#         with open (f"{fasta_dir}{gb_content.id}.fasta", "w+") as fasta_file:
-#             # writing header to file 
-#             fasta_file.write(header)
-#             # writing each sequence line 
-#             fasta_file.writelines(["%s\n" % seq_line  for seq_line in sequence_lines])
-#             # adding \n at end of file
-#             fasta_file.write('\n')
-#     except:
-#         print("No se pudo escribir al directorio")
-#         exit(1)
