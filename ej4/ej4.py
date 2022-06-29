@@ -52,12 +52,12 @@ for rec in record:
     for alignment in rec.alignments:
         for hsp in alignment.hsps:
             if(args.pattern.lower() in alignment.title.lower()):
-                save_file.write('****Alignment****\n')
-                save_file.write('-sequence: ' + alignment.title + '\n')
-                save_file.write('-accession: ' + alignment.accession + '\n')
-                save_file.write('-length: ' + str(alignment.length) + '\n')
-                save_file.write('-score: ' + str(hsp.score) + '\n')
-                save_file.write('-gaps: ' + str(hsp.gaps) + '\n')
+                save_file.write("\n####################################\n")
+                save_file.write('SEQUENCE: ' + alignment.title + '\n')
+                save_file.write('ACCESSION: ' + alignment.accession + '\n')
+                save_file.write('LENGTH: ' + str(alignment.length) + '\n')
+                save_file.write('SCORE: ' + str(hsp.score) + '\n')
+                save_file.write('GAPS: ' + str(hsp.gaps) + '\n')
                 if type == "protein":
                     save_file.write(Entrez.efetch(
                         db="protein", rettype="fasta", id=alignment.accession).read())
