@@ -1,0 +1,104 @@
+########################################
+# Program: patmatmotifs
+# Rundate: Wed 29 Jun 2022 19:59:24
+# Commandline: patmatmotifs
+#    -sequence /data/tmp.fa
+#    -outfile /data/out.patmatmotifs
+# Report_format: dbmotif
+# Report_file: /data/out.patmatmotifs
+########################################
+
+#=======================================
+#
+# Sequence: NM_001388492.1_1     from: 1   to: 4491
+# HitCount: 8
+#
+# Full: No
+# Prune: Yes
+# Data_file: /usr/share/EMBOSS/data/PROSITE/prosite.lines
+#
+#=======================================
+
+Length = 4
+Start = position 4338 of sequence
+End = position 4341 of sequence
+
+Motif = AMIDATION
+
+PGLGLLGRRELLRM
+     |  |
+  4338  4341
+
+Length = 4
+Start = position 2893 of sequence
+End = position 2896 of sequence
+
+Motif = AMIDATION
+
+HXELSSGRRAGIFS
+     |  |
+  2893  2896
+
+Length = 4
+Start = position 2691 of sequence
+End = position 2694 of sequence
+
+Motif = AMIDATION
+
+RGRGGGGRRPCTFV
+     |  |
+  2691  2694
+
+Length = 4
+Start = position 1140 of sequence
+End = position 1143 of sequence
+
+Motif = AMIDATION
+
+SRCFDFGRKLACSQ
+     |  |
+  1140  1143
+
+Length = 4
+Start = position 1001 of sequence
+End = position 1004 of sequence
+
+Motif = AMIDATION
+
+XSSSGRGKRSKQCL
+     |  |
+  1001  1004
+
+Length = 4
+Start = position 744 of sequence
+End = position 747 of sequence
+
+Motif = AMIDATION
+
+FVFANRGKKCAGSG
+     |  |
+   744  747
+
+Length = 3
+Start = position 3118 of sequence
+End = position 3120 of sequence
+
+Motif = RGD
+
+HQPVGRGDPPTCH
+     | |
+  3118 3120
+
+Length = 8
+Start = position 928 of sequence
+End = position 935 of sequence
+
+Motif = ATP_GTP_A
+
+DXLQAGELFGGKSRKLTQ
+     |      |
+   928      935
+
+
+#---------------------------------------
+#---------------------------------------
